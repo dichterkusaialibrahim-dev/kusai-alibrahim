@@ -6,7 +6,7 @@
     <title>Dichter Kusai Alibrahim | الشاعر قصي الابراهيم</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
-        :root { --bird-bg: #d4f1f1; --bird-blue: #33a1a1; --bird-yellow: #fdd835; --bird-orange: #ff8a65; --text-dark: #2c3e50; }
+        :root { --bird-bg: #d4f1f1; --bird-blue: #33a1a1; --bird-yellow: #fdd835; --bird-orange: #ff8a65; --text-dark: #2c3e50; --paper-bg: #fdf6e3; }
         body { font-family: 'Amiri', serif; background-color: var(--bird-bg); color: var(--text-dark); margin: 0; padding: 0; line-height: 1.6; }
         header { background: white; color: var(--bird-blue); padding: 40px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 6px solid var(--bird-yellow); }
         .header-img { width: 180px; height: 120px; object-fit: cover; border-radius: 8px; border: 2px solid var(--bird-yellow); }
@@ -24,12 +24,21 @@
         .dual-column { display: flex; gap: 40px; flex-wrap: wrap; }
         .col-ar { flex: 1; text-align: right; dir: rtl; border-right: 4px solid var(--bird-yellow); padding-right: 20px; }
         .col-de { flex: 1; text-align: left; dir: ltr; padding-left: 20px; font-family: 'Playfair Display', serif; }
+        
+        /* تنسيق قسم القصيدة المضاف */
+        .poem-box { background-color: var(--paper-bg); border: 2px solid var(--bird-orange); border-radius: 20px; padding: 40px; margin-bottom: 40px; }
+        .poem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .poem-line { line-height: 2.2; font-size: 1.2rem; margin-bottom: 15px; }
+        .poem-ar-text { text-align: right; dir: rtl; color: #1a1a1a; }
+        .poem-de-text { text-align: left; dir: ltr; font-style: italic; color: #34495e; border-left: 2px solid var(--bird-orange); padding-left: 20px; }
+
         .profile-img { width: 250px; height: 250px; object-fit: cover; border: 6px solid white; border-radius: 20px; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         .btn { padding: 12px 25px; text-decoration: none; border-radius: 10px; font-weight: bold; display: inline-block; margin: 5px; transition: 0.3s; font-size: 1rem; border: none; cursor: pointer; }
         .btn-amazon { background: #f39c12; color: #fff; }
         .btn-epubli { background: var(--bird-blue); color: #fff; }
         .btn-social { background: var(--bird-yellow); color: var(--text-dark); }
         footer { background: var(--bird-blue); color: white; text-align: center; padding: 40px; margin-top: 60px; }
+        @media (max-width: 768px) { .poem-grid { grid-template-columns: 1fr; } .poem-de-text { border-left: none; border-top: 2px solid var(--bird-orange); padding-top: 20px; } }
     </style>
 </head>
 <body>
@@ -66,6 +75,46 @@
                 <p>Als romantischer Dichter schreibt er klassische Poesie in Arabisch und Deutsch, Bildungslieder und Kurzgeschichten. Er tritt bei Lyrikabenden in Schulen, Theatern und Universitäten auf.</p>
                 <p>Mitglied im Verband deutscher Schriftsteller (VS), im Autorenverband Franken (AVF) und der VG Wort.</p>
                 <p>Dichter Kusai Alibrahim gilt als eine neue kulturelle Brücke zwischen Orient und Okzident, dank seines Talents, arabische Poesie ins Deutsche und deutsche Poesie ins Arabische zu übertragen, mit einer Erfahrung von über dreißig Jahren.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">شجرة الورد العابرة للحدود | Der grenzenlose Rosenstock</h2>
+    <div class="poem-box">
+        <div class="poem-grid">
+            <div class="poem-line poem-ar-text">
+                <p>لا تَعْجَبوا إنْ جُذَّ أصلي في المَدى .. فالعِطرُ في رُوحِ الشَّتيلةِ باق</p>
+                <p>أنا كالوُرودِ، وإنْ نُقِلتُ لِغُربةٍ .. نَبَتَتْ حُروفي في رُبى الآفاق</p>
+                <p>فَسَقيتُ "مايناً" مِنْ نَميرِ "فُراتِنا" .. وزَرَعتُ حُبّاً في ذُرى الأوْراق</p>
+                <p>أهديتُ لِلأرضِ البعيدةِ خَفقتي .. فغَدَتْ قَصيدي والوِدادُ سَواقي</p>
+                <p>إنْ كُنتُ في الشرقِ القديمِ مُجَذَّراً .. فبِغربِكمْ أزْهَرْتُ بالأشواق</p>
+                <p>"مفتاحُ قلبي" قد فتحتُ به المَدى .. لِيطلَّ حَرْفي في سَمَا الأشْواق</p>
+                <p>"بحرُ المحبةِ" في ضفافي مَوْجهُ .. يروي جفافَ القلْبِ بالإغْراق</p>
+                <p>"شاعرٌ لِلحُبِّ" أتيتُ وفي يَدي .. طِيْبُ "الغرامِ" بِلوعةِ العُشَّاق</p>
+                <p>"غزلٌ" تمادى "لا نهايةَ" لِلرؤى .. سَحَّتْ سَحائبُهُ على الأحْداق</p>
+                <p>هذي قَصيدي، بل زُهورُ مَشاعري .. أهديتُها لِلغربِ في أطْباق</p>
+            </div>
+            <div class="poem-line poem-de-text">
+                <p>Ein Rosenstock, vom Sturm der Zeit entführt</p>
+                <p>Doch seine Wurzel trägt den Duft im Kern</p>
+                <p>Wenn auch die fremde Erde ihn berührt</p>
+                <p>Er blüht im Westen, leuchtend wie ein Stern</p>
+                <p>Vom Euphrat bracht’ ich jene Lebenskraft</p>
+                <p>Die nun am Main in sanften Liedern weht</p>
+                <p>Ein Vers aus Liebe, der Versöhnung schafft</p>
+                <p>Und wie ein Segenswunsch im Winde steht</p>
+                <p>Den Herzschlüssel gab ich dem fernen Land</p>
+                <p>Damit mein Wort die Sehnsucht stillen mag</p>
+                <p>In meinem Liebesmeer am fremden Strand</p>
+                <p>Ertrinkt die Kälte vor dem neuen Tag</p>
+                <p>Als Liebesdichter kam ich weit herbei</p>
+                <p>Mit Orient-Duft in der eig’nen Hand</p>
+                <p>Ein Endlos-Flirt macht nun die Herzen frei</p>
+                <p>Ergießt sich wie ein Regen auf den Sand</p>
+                <p>Mein Schicksal ist im Osten fest verwurzt</p>
+                <p>Doch meine Blüten schenk' ich euch als Pfand</p>
+                <p>Das Herz bleibt fern im Orient entwurzt</p>
+                <p>Mein Wort reicht Blumen in dies ferne Land</p>
             </div>
         </div>
     </div>
