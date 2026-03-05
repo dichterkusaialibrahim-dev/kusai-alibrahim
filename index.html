@@ -3,112 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مختارات من أجمل قصائد العرب والألمان - قصي الإبراهيم</title>
+    <title>Kusai Alibrahim | الشاعر قصي الإبراهيم</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
-
-        :root {
-            --bird-bg: #d4f1f1; 
-            --vogelblau: #33a1a1; 
-            --vogelgelb: #fdd835;
-            --vogel-orange: #ff8a65;
-            --text-dark: #2c3e50;
-        }
-
-        body {
-            font-family: 'Amiri', serif;
-            background-color: #f9f9f9;
-            color: var(--text-dark);
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            width: 100%;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        h1 {
-            font-family: 'Playfair Display', serif;
-            color: var(--vogelblau);
-            border-bottom: 2px solid var(--vogelgelb);
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-        }
-
-        .image-box {
-            margin-bottom: 30px;
-            border: 4px solid var(--bird-bg);
-            border-radius: 10px;
-            overflow: hidden;
-            padding: 10px;
-            background: #fff;
-        }
-
-        .image-box img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-
-        .profile-img {
-            width: 180px !important;
-            height: 180px !important;
-            border-radius: 50% !important;
-            object-fit: cover;
-            border: 5px solid var(--vogelgelb);
-            margin: 20px auto;
-            display: block;
-        }
-
-        p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            color: #555;
-        }
-
-        .footer {
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #888;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-        }
+        :root { --vogelblau: #33a1a1; --vogelgelb: #fdd835; --text-dark: #2c3e50; }
+        body { font-family: 'Amiri', serif; background-color: #f9f9f9; color: var(--text-dark); margin: 0; padding: 20px; direction: rtl; }
+        .container { max-width: 900px; margin: auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.1); text-align: center; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--vogelblau); border-bottom: 2px solid var(--vogelgelb); padding-bottom: 5px; }
+        .image-box { margin: 25px 0; border: 3px solid #d4f1f1; border-radius: 15px; overflow: hidden; }
+        .image-box img { width: 100%; height: auto; display: block; }
+        .profile-img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 6px solid var(--vogelgelb); margin: 20px auto; }
+        .section { text-align: right; margin-top: 35px; padding: 25px; background: #fdfdfd; border-radius: 12px; border-right: 5px solid var(--vogelblau); }
+        .lang-de { direction: ltr; text-align: left; display: block; font-style: italic; color: #666; margin-top: 5px; }
+        .links-group a { display: inline-block; margin: 10px; padding: 10px 20px; background: var(--vogelblau); color: white; text-decoration: none; border-radius: 25px; transition: 0.3s; }
+        .links-group a:hover { background: var(--text-dark); }
+        .social-links { margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; }
+        .social-links a { margin: 0 15px; color: var(--vogelblau); text-decoration: none; font-weight: bold; font-size: 1.1rem; }
+        .footer { margin-top: 50px; font-size: 0.9rem; color: #888; border-top: 2px solid var(--vogelgelb); padding-top: 20px; }
     </style>
 </head>
 <body>
 
     <div class="container">
         <h1>مختارات من أجمل قصائد العرب والألمان</h1>
-        
+        <span class="lang-de">Auswahl der schönsten arabischen und deutschen Gedichte</span>
+
         <div class="image-box">
-            <img src="euphrat.jpg" alt="جسر دير الزور المعلق">
-            <p><strong>جسر دير الزور المعلق</strong></p>
+            <img src="euphrat.jpg" alt="Deir ez-Zor Hängebrücke / جسر دير الزور المعلق">
+            <p><strong>جسر دير الزور المعلق / Hängebrücke von Deir ez-Zor</strong></p>
         </div>
 
         <div class="image-box">
-            <img src="main.jpg" alt="قلعة مارينبيرغ في فورتسبورغ">
-            <p><strong>قلعة مارينبيرغ (Festung Marienberg) - فورتسبورغ</strong></p>
+            <img src="main.jpg" alt="Festung Marienberg / قلعة مارينبيرغ">
+            <p><strong>قلعة مارينبيرغ - فورتسبورغ / Festung Marienberg - Würzburg</strong></p>
         </div>
 
-        <div class="image-box">
-            <img src="kusai.webp" class="profile-img" alt="الشاعر قصي الإبراهيم" onerror="this.src='kusai.jpg.webp'">
-            <p><strong>الشاعر قصي الإبراهيم (Kusai Alibrahim)</strong></p>
+        <img src="kusai.webp" class="profile-img" alt="Dichter Kusai Alibrahim / الشاعر قصي الإبراهيم" onerror="this.src='kusai.jpg.webp'">
+        <h2>الشاعر قصي الإبراهيم</h2>
+        <span class="lang-de">Der Dichter Kusai Alibrahim</span>
+
+        <div class="section">
+            <h3>السيرة الذاتية / Biografie</h3>
+            <p>شاعر وباحث سوري مقيم في ألمانيا، مختص في علم العروض المقارن بين العربية والألمانية. يعمل على إحياء الشعر الكلاسيكي ومد الجسور الثقافية.</p>
+            <span class="lang-de">Ein in Deutschland lebender syrischer Dichter und Forscher, spezialisiert auf die vergleichende Prosodie zwischen Arabisch und Deutsch.</span>
         </div>
 
-        <p>قريباً.. رحلة في أعماق الشعر الكلاسيكي ومقارنة الأوزان بلسان الشاعر قصي الإبراهيم.</p>
+        <div class="section">
+            <h3>مكتبة الشاعر / Bibliothek</h3>
+            <p>مؤلف كتاب "Richtige Rhythmen für echte Gedichte" والعديد من الدواوين الشعرية المتاحة عبر:</p>
+            <div class="links-group">
+                <a href="https://www.epubli.com" target="_blank">ePubli</a>
+                <a href="https://www.amazon.de" target="_blank">Amazon</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>اتصل بنا: فعاليات وأمسيات / Kontakt: Events</h3>
+            <p>متاح لإقامة الأمسيات الشعرية، الندوات الثقافية، وقراءات الشعر في المدارس والمؤسسات التعليمية.</p>
+            <span class="lang-de">Verfügbar für Lyrikabende, Kulturseminare und Lesungen in Schulen und Bildungseinrichtungen.</span>
+        </div>
+
+        <div class="social-links">
+            <a href="#">فيسبوك / Facebook</a>
+            <a href="#">تويتر / X (Twitter)</a>
+            <a href="#">يوتيوب / YouTube</a>
+            <a href="#">ثريدز: قراءة في بايرن / Threads</a>
+        </div>
 
         <div class="footer">
-            <p>&copy; 2026 Kusai Alibrahim. Alle Rechte vorbehalten.</p>
-            <p>جميع الحقوق محفوظة للشاعر قصي الإبراهيم.</p>
+            <p>&copy; 2026 Alle Urheberrechte liegen beim Dichter Kusai Alibrahim.</p>
+            <p>جميع حقوق الملكية الفكرية محفوظة للشاعر قصي الإبراهيم.</p>
         </div>
     </div>
 
