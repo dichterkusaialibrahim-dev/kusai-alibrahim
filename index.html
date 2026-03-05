@@ -6,19 +6,20 @@
     <title>Kusai Alibrahim | الشاعر قصي الإبراهيم</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
-        :root { --vogelblau: #33a1a1; --vogelgelb: #fdd835; --text-dark: #2c3e50; }
+        :root { --vogelblau: #33a1a1; --vogelgelb: #fdd835; --bird-bg: #d4f1f1; --text-dark: #2c3e50; }
         body { font-family: 'Amiri', serif; background-color: #f9f9f9; color: var(--text-dark); margin: 0; padding: 20px; direction: rtl; }
         .container { max-width: 900px; margin: auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.1); text-align: center; }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--vogelblau); border-bottom: 2px solid var(--vogelgelb); padding-bottom: 5px; }
-        .image-box { margin: 25px 0; border: 3px solid #d4f1f1; border-radius: 15px; overflow: hidden; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--vogelblau); border-bottom: 2px solid var(--vogelgelb); padding-bottom: 5px; display: inline-block; }
+        .image-box { margin: 25px 0; border: 3px solid var(--bird-bg); border-radius: 15px; overflow: hidden; background: #fff; }
         .image-box img { width: 100%; height: auto; display: block; }
-        .profile-img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 6px solid var(--vogelgelb); margin: 20px auto; }
+        .profile-img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 6px solid var(--vogelgelb); margin: 20px auto; display: block; }
         .section { text-align: right; margin-top: 35px; padding: 25px; background: #fdfdfd; border-radius: 12px; border-right: 5px solid var(--vogelblau); }
-        .lang-de { direction: ltr; text-align: left; display: block; font-style: italic; color: #666; margin-top: 5px; }
-        .links-group a { display: inline-block; margin: 10px; padding: 10px 20px; background: var(--vogelblau); color: white; text-decoration: none; border-radius: 25px; transition: 0.3s; }
-        .links-group a:hover { background: var(--text-dark); }
-        .social-links { margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; }
-        .social-links a { margin: 0 15px; color: var(--vogelblau); text-decoration: none; font-weight: bold; font-size: 1.1rem; }
+        .lang-de { direction: ltr; text-align: left; display: block; font-style: italic; color: #666; margin-top: 5px; font-family: 'Playfair Display', serif; }
+        .links-group a { display: inline-block; margin: 10px; padding: 12px 25px; background: var(--vogelblau); color: white; text-decoration: none; border-radius: 25px; transition: 0.3s; font-weight: bold; }
+        .links-group a:hover { background: var(--vogelgelb); color: var(--text-dark); }
+        .social-links { margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; }
+        .social-links a { color: var(--vogelblau); text-decoration: none; font-weight: bold; font-size: 1.1rem; border: 1px solid #eee; padding: 5px 10px; border-radius: 5px; }
+        .social-links a:hover { background: var(--bird-bg); }
         .footer { margin-top: 50px; font-size: 0.9rem; color: #888; border-top: 2px solid var(--vogelgelb); padding-top: 20px; }
     </style>
 </head>
@@ -29,28 +30,28 @@
         <span class="lang-de">Auswahl der schönsten arabischen und deutschen Gedichte</span>
 
         <div class="image-box">
-            <img src="euphrat.jpg" alt="Deir ez-Zor Hängebrücke / جسر دير الزور المعلق">
+            <img src="euphrat.jpg" alt="جسر دير الزور">
             <p><strong>جسر دير الزور المعلق / Hängebrücke von Deir ez-Zor</strong></p>
         </div>
 
         <div class="image-box">
-            <img src="main.jpg" alt="Festung Marienberg / قلعة مارينبيرغ">
+            <img src="main.jpg" alt="قلعة مارينبيرغ">
             <p><strong>قلعة مارينبيرغ - فورتسبورغ / Festung Marienberg - Würzburg</strong></p>
         </div>
 
-        <img src="kusai.webp" class="profile-img" alt="Dichter Kusai Alibrahim / الشاعر قصي الإبراهيم" onerror="this.src='kusai.jpg.webp'">
+        <img src="kusai.webp" class="profile-img" alt="الشاعر قصي الإبراهيم" onerror="this.src='kusai.jpg.webp'">
         <h2>الشاعر قصي الإبراهيم</h2>
         <span class="lang-de">Der Dichter Kusai Alibrahim</span>
 
         <div class="section">
             <h3>السيرة الذاتية / Biografie</h3>
-            <p>شاعر وباحث سوري مقيم في ألمانيا، مختص في علم العروض المقارن بين العربية والألمانية. يعمل على إحياء الشعر الكلاسيكي ومد الجسور الثقافية.</p>
-            <span class="lang-de">Ein in Deutschland lebender syrischer Dichter und Forscher, spezialisiert auf die vergleichende Prosodie zwischen Arabisch und Deutsch.</span>
+            <p>شاعر وباحث سوري مختص في علم العروض المقارن بين العربية والألمانية، ومؤلف يعمل على مد الجسور الأدبية بين الثقافتين.</p>
+            <span class="lang-de">Syrischer Dichter und Forscher, spezialisiert auf vergleichende Prosodie zwischen Arabisch und Deutsch.</span>
         </div>
 
         <div class="section">
-            <h3>مكتبة الشاعر / Bibliothek</h3>
-            <p>مؤلف كتاب "Richtige Rhythmen für echte Gedichte" والعديد من الدواوين الشعرية المتاحة عبر:</p>
+            <h3>المكتبة / Bibliothek</h3>
+            <p>مؤلف كتاب "Richtige Rhythmen für echte Gedichte" (2024). كتبي متاحة عبر:</p>
             <div class="links-group">
                 <a href="https://www.epubli.com" target="_blank">ePubli</a>
                 <a href="https://www.amazon.de" target="_blank">Amazon</a>
@@ -58,16 +59,18 @@
         </div>
 
         <div class="section">
-            <h3>اتصل بنا: فعاليات وأمسيات / Kontakt: Events</h3>
-            <p>متاح لإقامة الأمسيات الشعرية، الندوات الثقافية، وقراءات الشعر في المدارس والمؤسسات التعليمية.</p>
-            <span class="lang-de">Verfügbar für Lyrikabende, Kulturseminare und Lesungen in Schulen und Bildungseinrichtungen.</span>
+            <h3>الفعاليات / Events</h3>
+            <p>نقيم الأمسيات الشعرية، الندوات الثقافية، وقراءات الشعر في المدارس الألمانية.</p>
+            <span class="lang-de">Lesungen an Schulen, Lyrikabende und Kulturseminare.</span>
         </div>
 
         <div class="social-links">
-            <a href="#">فيسبوك / Facebook</a>
-            <a href="#">تويتر / X (Twitter)</a>
-            <a href="#">يوتيوب / YouTube</a>
-            <a href="#">ثريدز: قراءة في بايرن / Threads</a>
+            <a href="https://www.facebook.com/Dichter.Kusai.Alibrahim" target="_blank">Facebook</a>
+            <a href="https://twitter.com/KusaiAlibrahim" target="_blank">X (Twitter)</a>
+            <a href="https://www.instagram.com/dichter.kusai.alibrahim" target="_blank">Instagram</a>
+            <a href="https://www.threads.net/@dichter.kusai.alibrahim" target="_blank">Threads</a>
+            <a href="https://www.youtube.com/@Liederfuchs" target="_blank">YouTube (Liederfuchs)</a>
+            <a href="https://www.lesen.bayern.de/autoren/600/#c77191" target="_blank">Lesen Bayern</a>
         </div>
 
         <div class="footer">
