@@ -39,6 +39,7 @@
         footer { background: var(--bird-blue); color: white; text-align: center; padding: 40px; margin-top: 60px; }
         @media (max-width: 768px) { .poem-grid { grid-template-columns: 1fr; } .poem-de-text { border-left: none; border-top: 2px solid var(--bird-orange); padding-top: 20px; } }
     </style>
+    <link rel="stylesheet" href="assets/site-enhancements.css">
 </head>
 <body>
 
@@ -82,7 +83,7 @@
     <h2 class="section-title">معرض الصور والوسائط | Galerie & Medien</h2>
     <div class="content-box" style="text-align:center;">
         <input type="file" id="imageInput" accept="image/*" multiple style="display:none;">
-        <button class="btn btn-social" onclick="document.getElementById('imageInput').click()">رفع صورة | Foto hochladen</button>
+        <p>لإضافة الصور بشكل دائم، استخدم لوحة الإدارة | Bilder dauerhaft über die Verwaltung hinzufügen</p><a class="btn btn-social" href="https://pagescms.org/" target="_blank" rel="noopener noreferrer">إدارة المحتوى | Inhalte verwalten</a>
         <div class="gallery-grid" id="gallery">
             <img src="graves.jpg" alt="القصيدة المنقوشة">
         </div>
@@ -195,5 +196,6 @@
         }
     });
 </script>
+    <script src="assets/site-content.js" defer></script>
 </body>
 </html>
