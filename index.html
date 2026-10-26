@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="de-ar">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dichter Kusai Alibrahim | الشاعر قصي الابراهيم</title>
+    <meta name="description" content="Dichter Kusai Alibrahim – deutsch-arabische Lyrik, Bücher, Lehrlieder, Übersetzungen und Lesungen in Würzburg.">
+    <meta name="theme-color" content="#33a1a1">
+    <meta property="og:title" content="Dichter Kusai Alibrahim | الشاعر قصي الابراهيم">
+    <meta property="og:description" content="Poesie zwischen Euphrat und Main – Gedichte, Bücher, Lehrlieder und Lesungen.">
+    <meta property="og:image" content="kusai.webp">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
         :root { --bird-bg: #d4f1f1; --bird-blue: #33a1a1; --bird-yellow: #fdd835; --bird-orange: #ff8a65; --text-dark: #2c3e50; --paper-bg: #fdf6e3; }
@@ -39,9 +44,11 @@
         footer { background: var(--bird-blue); color: white; text-align: center; padding: 40px; margin-top: 60px; }
         @media (max-width: 768px) { .poem-grid { grid-template-columns: 1fr; } .poem-de-text { border-left: none; border-top: 2px solid var(--bird-orange); padding-top: 20px; } }
     </style>
+    <link rel="stylesheet" href="assets/site-enhancements.css">
 </head>
 <body>
 
+<a class="skip-link" href="#hauptinhalt">Zum Inhalt springen</a>
 <header>
     <img src="main.jpg" alt="Festung Marienberg" class="header-img">
     <div class="header-text">
@@ -51,7 +58,7 @@
     <img src="euphrat.jpg" alt="Hängebrücke Deir ez-Zor" class="header-img">
 </header>
 
-<div class="container">
+<main class="container" id="hauptinhalt">
     <div class="name-section">
         <p class="name-ar">الشاعر قصي الابراهيم</p>
         <p class="name-de">Dichter Kusai Alibrahim</p>
@@ -71,7 +78,7 @@
             </div>
             <div class="col-de">
                <p><strong>Akademiker, Dichter und Schriftsteller</strong></p>
-                <p>Nach seinem Master in Ökonomie an der Universität Bonn arbeitete er als Lehrer an deutschen Schulen, bevor er sich ganz der Literatur widmete.</p>
+                <p>Nach seinem Master in Wirtschaftswissenschaften an der Universität Bonn arbeitete er als Lehrer an deutschen Schulen, bevor er sich ganz der Literatur widmete.</p>
                 <p>Als romantischer Dichter schreibt er klassische Poesie in Arabisch und Deutsch, Bildungslieder und Kurzgeschichten. Er tritt bei Lyrikabenden in Schulen, Theatern und Universitäten auf.</p>
                 <p>Mitglied im Verband deutscher Schriftsteller (VS), im Autorenverband Franken (AVF) und der VG Wort.</p>
                 <p>Dichter Kusai Alibrahim gilt als eine neue kulturelle Brücke zwischen Orient und Okzident, dank seines Talents, arabische Poesie ins Deutsche und deutsche Poesie ins Arabische zu übertragen, mit einer Erfahrung von über dreißig Jahren.</p>
@@ -82,7 +89,7 @@
     <h2 class="section-title">معرض الصور والوسائط | Galerie & Medien</h2>
     <div class="content-box" style="text-align:center;">
         <input type="file" id="imageInput" accept="image/*" multiple style="display:none;">
-        <button class="btn btn-social" onclick="document.getElementById('imageInput').click()">رفع صورة | Foto hochladen</button>
+        <p>لإضافة الصور بشكل دائم، استخدم لوحة الإدارة | Bilder dauerhaft über die Verwaltung hinzufügen</p><a class="btn btn-social" href="https://app.pagescms.org/" target="_blank" rel="noopener noreferrer">إدارة المحتوى | Inhalte verwalten</a>
         <div class="gallery-grid" id="gallery">
             <img src="graves.jpg" alt="القصيدة المنقوشة">
         </div>
@@ -172,28 +179,14 @@
         <a href="https://www.instagram.com/dichter_kusai_alibrahim" class="btn btn-social" style="background:#d81b60; color:white;" target="_blank">Instagram</a>
         <a href="https://x.com/dichter_kusai" class="btn btn-social" style="background:#2c3e50; color:white;" target="_blank">X (Twitter)</a>
     </div>
-</div>
+</main>
 
 <footer>
     <p>© 2026 جميع الحقوق محفوظة | الشاعر قصي الابراهيم | Würzburg</p>
     <p>© 2026 Alle Urheberrechte liegen beim Dichter Kusai Alibrahim | Würzburg</p>
 </footer>
 
-<script>
-    const imageInput = document.getElementById('imageInput');
-    const gallery = document.getElementById('gallery');
-    imageInput.addEventListener('change', (e) => {
-        const files = e.target.files;
-        for(let i=0; i<files.length; i++) {
-            const reader = new FileReader();
-            reader.onload = (event) => {
-                const img = document.createElement('img');
-                img.src = event.target.result;
-                gallery.appendChild(img);
-            }
-            reader.readAsDataURL(files[i]);
-        }
-    });
-</script>
+
+    <script src="assets/site-content.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,91 @@
+media:
+  input: media
+  output: /media
+content:
+  - name: site
+    label: Website und Links
+    type: file
+    path: content/site.json
+    fields:
+      - name: siteTitle
+        label: Website-Titel
+        type: string
+      - name: links
+        label: Links hinzufügen, bearbeiten oder löschen
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Beschriftung
+            type: string
+          - name: url
+            label: URL
+            type: string
+          - name: category
+            label: Kategorie
+            type: string
+      - name: books
+        label: Bücher
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Buchtitel
+            type: string
+          - name: description
+            label: Beschreibung
+            type: text
+          - name: cover
+            label: Titelbild
+            type: image
+          - name: isbn
+            label: ISBN
+            type: string
+          - name: price
+            label: Preis
+            type: string
+          - name: url
+            label: Kauf-Link
+            type: string
+      - name: media
+        label: Bilder und Videos
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Titel
+            type: string
+          - name: image
+            label: Bild
+            type: image
+          - name: videoUrl
+            label: Video-URL (YouTube)
+            type: string
+          - name: category
+            label: Kategorie
+            type: string
+      - name: poems
+        label: Gedichte
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Titel
+            type: string
+          - name: arabic
+            label: Arabisch
+            type: text
+          - name: german
+            label: Deutsch
+            type: text
+      - name: articles
+        label: Artikel
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Titel
+            type: string
+          - name: body
+            label: Inhalt
+            type: text
