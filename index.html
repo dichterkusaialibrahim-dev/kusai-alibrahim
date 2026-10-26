@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de-ar">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,14 +65,14 @@
         <div class="dual-column">
             <div class="col-ar">
                 <p><strong>أكاديمي وشاعر وكاتب ألماني من أصل سوري</strong></p>
-                <p>حاصل على درجة الماجستير في الاقتصاد من جامعة بون وعمل مدرساً في المدارس الألمانية قبل أن يتفرغ تماماً لعالم الكتابة والإبداع الأدبي</p>
+                <p>حاصل على درجة الماجستير في الاقتصاد من جامعة دمشق وعمل مدرساً في المدارس الألمانية قبل أن يتفرغ تماماً لعالم الكتابة والإبداع الأدبي</p>
                 <p>شاعر رومانسي يكتب الشعر الكلاسيكي باللغتين العربية والألمانية والأغاني التعليمية والقصة القصيرة ويقدم أمسيات شعرية في المدارس والمسارح والجامعات</p>
                 <p>عضو اتحاد كتاب ألمانيا وعضو اتحاد كتاب الفرانكن وعضو جمعية حماية حقوق الملكية الفكرية للكتاب الألمان</p>
                 <p>يعتبر الشاعر قصي الابراهيم جسراً ثقافياً جديداً بين الشرق والغرب لامتلاكه موهبة نقل الشعر العربي للألمانية والشعر الألماني للعربية بخبرة تجاوزت الثلاثين عاماً</p>
             </div>
             <div class="col-de">
                <p><strong>Akademiker, Dichter und Schriftsteller</strong></p>
-                <p>Nach seinem Master in Ökonomie an der Universität Bonn arbeitete er als Lehrer an deutschen Schulen, bevor er sich ganz der Literatur widmete.</p>
+                <p>Nach seinem Master in Wirtschaftswissenschaften an der Universität Damaskus arbeitete er als Lehrer an deutschen Schulen, bevor er sich ganz der Literatur widmete.</p>
                 <p>Als romantischer Dichter schreibt er klassische Poesie in Arabisch und Deutsch, Bildungslieder und Kurzgeschichten. Er tritt bei Lyrikabenden in Schulen, Theatern und Universitäten auf.</p>
                 <p>Mitglied im Verband deutscher Schriftsteller (VS), im Autorenverband Franken (AVF) und der VG Wort.</p>
                 <p>Dichter Kusai Alibrahim gilt als eine neue kulturelle Brücke zwischen Orient und Okzident, dank seines Talents, arabische Poesie ins Deutsche und deutsche Poesie ins Arabische zu übertragen, mit einer Erfahrung von über dreißig Jahren.</p>
@@ -180,22 +180,7 @@
     <p>© 2026 Alle Urheberrechte liegen beim Dichter Kusai Alibrahim | Würzburg</p>
 </footer>
 
-<script>
-    const imageInput = document.getElementById('imageInput');
-    const gallery = document.getElementById('gallery');
-    imageInput.addEventListener('change', (e) => {
-        const files = e.target.files;
-        for(let i=0; i<files.length; i++) {
-            const reader = new FileReader();
-            reader.onload = (event) => {
-                const img = document.createElement('img');
-                img.src = event.target.result;
-                gallery.appendChild(img);
-            }
-            reader.readAsDataURL(files[i]);
-        }
-    });
-</script>
+
     <script src="assets/site-content.js" defer></script>
 </body>
 </html>
