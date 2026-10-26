@@ -8,7 +8,7 @@ const safeUrl=(s)=>{try{const u=new URL(s,location.href);return ['https:','http:
 const link=(label,url,klass='btn btn-social')=>{const href=safeUrl(url);if(!href)return null;const a=document.createElement('a');a.href=href;a.textContent=label;a.className=klass;a.target='_blank';a.rel='noopener noreferrer';return a};
 const text=(tag,value)=>{const e=document.createElement(tag);e.textContent=value||'';return e};
 const makeSection=(ar,de,items,render)=>{if(!Array.isArray(items)||!items.length)return;const h=title(ar,de),b=box();items.forEach(item=>{try{const el=render(item);if(el)b.appendChild(el)}catch(e){console.warn('Item skipped',e)}});root.append(h,b)};
-fetch('content/site.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Content unavailable');return r.json()}).then(data=>{
+fetch(new URL('content/site.json',document.baseURI),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Content unavailable');return r.json()}).then(data=>{
 makeSection('روابط ومراجع','Links & Referenzen',data.links,x=>{const a=link(x.label,x.url);if(a){a.title=x.category||'';}return a});
 const seen=new Set();
 makeSection('مؤلفاتي','Meine Bücher',(data.books||[]).filter(x=>{const k=(x.title||'').trim().toLocaleLowerCase();if(!k||seen.has(k))return false;seen.add(k);return true}),x=>{const c=document.createElement('article');c.className='editor-card';if(x.cover){const u=safeUrl(x.cover);if(u){const im=document.createElement('img');im.src=u;im.alt=x.title||'';im.loading='lazy';c.appendChild(im)}}c.append(text('h3',x.title),text('p',x.description),text('small',[x.isbn&&'ISBN: '+x.isbn,x.price].filter(Boolean).join(' · ')));const a=link('Zum Buch / شراء الكتاب',x.url,'btn btn-epubli');if(a)c.appendChild(a);return c});
